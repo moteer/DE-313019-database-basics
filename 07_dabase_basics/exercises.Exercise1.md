@@ -3,17 +3,72 @@
 (execute the world.sql script first in order to query it ;)
 
 1. Get all Names of all the countries.
+   
+   ```
+   SELECT Name FROM country
 2. Get all Names and continents from all countries.
+   ```
+   SELECT Name, Continent FROM country
+
 3. Get all the Information about your home country (filtering).
+   ```
+   SELECT *
+   FROM country
+   WHERE Name="Germany"
+   
 4. Get names of countries in Europe and in Africa.
-5. Get names of countries that are NOT in Europe.
-6. How many countries are there in the world?
-7. How many countries are there in Europe?
-8. How can I rename the column header for the result? (use an alias).
-9. What is the total population of Europe?
-10. What is the average population by country in Europe?
-11. What is the smallest population of a country in the world?
-12. What is the biggest population of a country in the world?
+   ```SELECT Name
+   FROM country
+   WHERE Continent="Europe"
+   
+5. How many countries are there in the world?
+```
+   SELECT count(*)
+   FROM country
+```
+
+6. How many countries are there in Europe?
+```
+   SELECT count(*)
+   FROM country
+   WHERE Continent="Europe"
+```
+
+7. How can I rename the column header for the result? (use an alias).
+```   
+   SELECT count(*) AS TotalCountries
+   FROM country
+   WHERE Continent="Europe"
+```
+
+8. What is the total population of Europe?
+```
+   SELECT SUM(Population)
+   FROM country
+   WHERE Continent="Europe"
+```
+
+9. What is the average population by country in Europe?
+```
+   SELECT AVG(Population)
+   FROM country
+   WHERE Continent="Europe"
+```
+
+10. What is the smallest population of a country in the world?
+```
+SELECT MIN(Population)
+FROM country
+WHERE Continent="Europe"
+```
+
+11. What is the biggest population of a country in the world?
+```
+SELECT MAX(Population)
+FROM country
+WHERE Continent="Europe"
+```
+
 13. Display the number of countries for each continent.
 14. Display the total population of each continent.
 15. Show only the Regions which have more than 15 countries.
