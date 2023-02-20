@@ -1,3 +1,7 @@
+-- noinspection SqlDialectInspectionForFile
+
+-- noinspection SqlNoDataSourceInspectionForFile
+
 -- MySQL dump 10.13  Distrib 5.1.51, for pc-linux-gnu (i686)
 --
 -- Host: 127.0.0.1    Database: world
