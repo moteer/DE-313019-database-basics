@@ -70,14 +70,87 @@ WHERE Continent="Europe"
 ```
 
 13. Display the number of countries for each continent.
+```
+SELECT Continent, count(*)
+FROM country
+GROUP BY Continent
+-- Problem when ordering by a column that is an Enum
+ORDER BY CAST(Continent AS CHAR)
+```
 14. Display the total population of each continent.
+```
+SELECT Continent, SUM(Population) AS "Total Population"
+FROM country
+GROUP BY Continent
+ORDER BY CAST(Continent AS CHAR)
+```
 15. Show only the Regions which have more than 15 countries.
+```
+SELECT Region, COUNT(*) AS Total
+FROM country
+GROUP BY Region
+HAVING COUNT(*)>15
+ORDER BY Total DESC
+```
 16. Show only the Regions in Europe which have more than 5 countries.
+```
+SELECT Region, COUNT(*) AS Total
+FROM country
+WHERE Continent="Europe"
+GROUP BY Region
+HAVING COUNT(*)>5
+ORDER BY Total DESC
+```
 17. How many countries are there in the world that have a population smaller than 10 million and that have gained independent before 1900?
+```
+SELECT count(*)
+FROM country
+WHERE population<10000000 AND IndepYear<1900
+```
 19. Same thing, but showing the names and the population of these countries, ordered by population (most populous first).
+```
+SELECT Name, Population
+FROM country
+WHERE population<10000000 AND IndepYear<1900
+ORDER BY Population DESC
+```
 20. Display all countries which have "Arab" in their names.
+```
+SELECT Name
+    FROM country
+    WHERE Name LIKE "%Arab%"
+```
 20. Countries from Asia that have a population bigger than 100 million or a lifeexpectancy smaller than 65.
+```
+SELECT *
+FROM country
+WHERE Continent="Asia" AND (Population>100000000 OR LifeExpectancy<65)
+```
 21. Display all information for Portugal, Germany and Angola!
-22. Display all information for all the countries in the world, except Portugal, Brazil and Angola!
+```
+SELECT *
+FROM country
+WHERE Name IN ("Portugal", "Germany", "Angola")
+```
+23. Display all information for all the countries in the world, except Portugal, Brazil and Angola!
+```
+SELECT *
+FROM country
+WHERE Name NOT IN ("Portugal", "Brazil", "Angola")
+-- Alternatives
+-- WHERE Name!="Portugal" AND Name!="Brazil" AND Name!="Angola"
+-- WHERE Name<>"Portugal" AND Name<>"Brazil" AND Name<>"Angola"
+```
 23. Calculate the Population density for every country in the world!
-
+```
+SELECT Name, Population/SurfaceArea AS "Population density"
+    FROM country
+    ORDER BY 2 DESC
+```
+24. Display all the Hungarian :) cities.
+```
+SELECT *
+FROM country INNER JOIN city
+ON country.code=city.CountryCode
+WHERE country.Name="Hungary"
+```
