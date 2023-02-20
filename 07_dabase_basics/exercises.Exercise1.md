@@ -78,3 +78,6 @@ WHERE Continent="Europe"
 20. Display all countries which have "Arab" in their names.
 20. Countries from Asia that have a population bigger than 100 million or a lifeexpectancy smaller than 65.
 21. Display all information for Portugal, Germany and Angola!
+22. Display all information for all the countries in the world, except Portugal, Brazil and Angola!
+23. Calculate the Population density for every country in the world!
+
