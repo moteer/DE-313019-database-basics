@@ -141,9 +141,9 @@ WHERE Name NOT IN ("Portugal", "Brazil", "Angola")
 -- WHERE Name!="Portugal" AND Name!="Brazil" AND Name!="Angola"
 -- WHERE Name<>"Portugal" AND Name<>"Brazil" AND Name<>"Angola"
 ```
-23. Calculate the Population density for every country in the world!
-24. Display all the Hungarian :) cities.
-25. Display the Greek cities that have a population bigger than 150000
-26. Display all the cities from all the countries.
-27. Display the official language for every country.
-28. Display the name of each country and the name of the capital.
+24. Calculate the Population density for every country in the world!
+25. Display all the Hungarian :) cities.
+26. Display the Greek cities that have a population bigger than 150000
+27. Display all the cities from all the countries.
+28. Display the official language for every country.
+29. Display the name of each country and the name of the capital.
