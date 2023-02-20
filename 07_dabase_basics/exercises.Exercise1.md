@@ -187,3 +187,7 @@ SELECT country.name AS Country, city.name AS Capital
  ON country.code=city.CountryCode
  WHERE country.capital=city.id
 ```
+
+30. Create an EER diagram with mysql workbench for a (simple) library database. It should have at least three tables (book, customer, transaction) maybe you find better names.
+   - create a script and execute it
+   - create CRUD operations to fill and manipulate data in your library database
