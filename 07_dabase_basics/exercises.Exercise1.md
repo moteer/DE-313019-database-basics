@@ -142,15 +142,8 @@ WHERE Name NOT IN ("Portugal", "Brazil", "Angola")
 -- WHERE Name<>"Portugal" AND Name<>"Brazil" AND Name<>"Angola"
 ```
 23. Calculate the Population density for every country in the world!
-```
-SELECT Name, Population/SurfaceArea AS "Population density"
-    FROM country
-    ORDER BY 2 DESC
-```
 24. Display all the Hungarian :) cities.
-```
-SELECT *
-FROM country INNER JOIN city
-ON country.code=city.CountryCode
-WHERE country.Name="Hungary"
-```
+25. Display the Greek cities that have a population bigger than 150000
+26. Display all the cities from all the countries.
+27. Display the official language for every country.
+28. Display the name of each country and the name of the capital.
