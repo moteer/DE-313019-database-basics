@@ -191,3 +191,10 @@ SELECT country.name AS Country, city.name AS Capital
 30. Create an EER diagram with mysql workbench for a (simple) library database. It should have at least three tables (book, customer, transaction) maybe you find better names.
    - create a script and execute it
    - create CRUD operations to fill and manipulate data in your library database
+
+31. Display all book titles a customer has lent for a given period of time. 
+   -  If necessary extend your model to cater for the new requirement, find out how you can alter your already created database without lossing the data that is already in it. 
+   -  What opstacles did you face here?
+   -  Find a way to be able to jump back to the previouse version of your database. (Think about git and how you would version your sql scripts.)
+   -  Add your sql scripts to github including the versions you have created within the git history, so that someone can just execute it the way you have done it to create your world database.
+
