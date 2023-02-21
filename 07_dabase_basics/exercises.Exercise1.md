@@ -198,3 +198,7 @@ SELECT country.name AS Country, city.name AS Capital
    -  Find a way to be able to jump back to the previouse version of your database. (Think about git and how you would version your sql scripts.)
    -  Add your sql scripts to github including the versions you have created within the git history, so that someone can just execute it the way you have done it to create your world database.
 
+32. Implement a spring boot application, which connects to your database and allows to persist books, customers and transactions.
+   - keep it simple for the first shot and only implement the most basic version of it
+   - create an endpoint for each entity to add e.g. /books/add
+   - another endpoint to read /books
