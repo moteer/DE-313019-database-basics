@@ -212,5 +212,5 @@ SELECT country.name AS Country, city.name AS Capital
 
 34. Implement your cardinalities accordingly using @OneToMany and @ManyToOne
 35. Create a view where one can edit or remove a book
-   - (bonus) have an edit button/link and a remove button/link in a table view of your books and implement the functionality acordingly
+   - (bonus) have an edit button/link and a remove button/link in a table view of your books and implement the functionality accordingly
 
