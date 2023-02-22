@@ -205,9 +205,10 @@ SELECT country.name AS Country, city.name AS Capital
    - another endpoint to read /customers
 
 33. Create a search functionality where one can find
-   - books by name and year
+   - books by name AND year
+   - books by name OR year
    - customers by name
    - customers using a like pattern  
 
-35. 
+35. Implement your cardinalities accordingly using @OneToMany and @ManyToOne
 
