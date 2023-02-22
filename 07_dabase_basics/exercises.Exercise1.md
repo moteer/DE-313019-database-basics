@@ -203,3 +203,11 @@ SELECT country.name AS Country, city.name AS Capital
    - create an endpoint for book and customer entity to add e.g. /books/add
    - another endpoint to read /books
    - another endpoint to read /customers
+
+33. Create a search functionality where one can find
+   - books by name and year
+   - customers by name
+   - customers using a like pattern  
+
+35. 
+
