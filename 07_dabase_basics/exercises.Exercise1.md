@@ -1,4 +1,5 @@
-## For the following tasks are used with the world database
+## Bitte installiert MariaDB Server und einen beliebigen dazu passenden Client, so dass ihr das world.sql script lokal auf eurem Laptop ausführen könnt. (siehe auch SQL.pdf)
+## The following tasks are used with the world database
 
 (execute the world.sql script first in order to query it ;)
 
