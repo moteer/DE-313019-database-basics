@@ -65,7 +65,9 @@ Shows the official language for every country
     country.Name IN ("Greece", "Hungary");
 ```
 
-CRUD Operations
+
+
+CRUD Operations Examples
 INSERT
 ```
 INSERT INTO club (name, points) 
